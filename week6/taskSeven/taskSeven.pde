@@ -5,7 +5,7 @@
 //The easiest way that came to mind was to simply create two FOR loops
 //one for positive numbers, and one for negative numbers.
 
-int input = -20;
+int input = 20;
 
 if(input > 0){
 for (int i = 0; i <= input; i++) {
