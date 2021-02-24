@@ -2,7 +2,7 @@ class Main{
 	public static void main(String[] args){
 		emptyLine();
 		printLine("This is a line");
-		printNameAge("Peter",19);
+		printNameAge("Peter",20);
 
 	}
 
