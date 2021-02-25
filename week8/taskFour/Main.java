@@ -1,16 +1,20 @@
+import java.util.Arrays;
+
 class Main{
 	public static void main(String[] args){
 		int[] intArray = {10,20,30};
 		String[] stringArray = {"ten","twenty","thirty"};
 		boolean[] booleanArray ={true,false,true};
+		int[] intMessArray = {5,1,8,25,28,9,51,2,7,43,12,11,71};
 
 		printStrings(stringArray);
 		
 
 		System.out.println(sumOfAllInts(intArray));
 		System.out.println(averageOfAllInts(intArray));
-	}
+		System.out.println(Arrays.toString(sortArray(intMessArray)));
 
+	}
 
 	public static void printStrings(String[] strings){
 		for(String string : strings){
@@ -36,18 +40,10 @@ class Main{
 		return average;
 	}
 
-	/*public static int[] arrangeIntArray(int[] arrayOfInts){
-		int[] tempArray = null
-		int tempValue = 0;
+	//Sorting an array from lowest to highest value, can be done using the sort() method after importing java.util.Arrays
+	public static int[] sortArray(int[] arrayOfInts){
+		Arrays.sort(arrayOfInts);
+		return arrayOfInts;
+	}
 
-		for(int numb : arrayOfInts){
-			for(int numb2 : arrayOfInts){
-
-				if(arrayOfInts[numb] > arrayOfInts[numb2]){
-					tempArray[numb] = arrayOfInts[numb2]
-				}
-			}
-		}
-		return tempArray;
-	}*/
 }
